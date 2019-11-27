@@ -1,0 +1,45 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin-bottom: 120px;
+}
+.wrap {
+  min-height: 100%;
+}
+.footer {
+  background-color: #888c8f;
+  margin-top: 0px;
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+  overflow: hidden;
+}
+.footer h2 {
+  color: #FFF;
+}
+.bottom-feature {
+  background-color: #888c8f;
+}
+.bottom-container {
+  background-color: #002a5b;
+  color: #FFFFFF;
+  padding-top: 25px;
+}
+.bottom-container h4 {
+  color: #FFF;
+}
+.bottom-bar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.bottom-bar h1,
+.bottom-bar h2,
+.bottom-bar h3,
+.bottom-bar h4,
+.bottom-bar h5 h6 {
+  color: #FFF;
+}

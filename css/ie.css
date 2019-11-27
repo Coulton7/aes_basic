@@ -1,0 +1,18 @@
+
+.header-wave{
+
+	background-image:url('../images/lower-wave.png');
+	background-position: right;
+	background-repeat:no-repeat;
+	background-size:contain !important;
+	-ms-behavior: url(../js/backgroundsize.min.htc) !important;
+
+}
+
+
+	.header-wave> .background-size-polyfill:first-child{
+
+		z-index:100 !important;
+	}
+
+

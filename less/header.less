@@ -1,0 +1,180 @@
+// Insert your styling here.
+// Bootstrap variables.
+@import 'variables';
+
+// Media query variables.
+@tablet:  ~"screen and (min-width: @{screen-sm-min})";
+@normal:  ~"screen and (min-width: @{screen-md-min})";
+@wide:    ~"screen and (min-width: @{screen-lg-min})";
+
+
+.navbar-default{
+
+	background-color:transparent;
+	border:none;
+	border-radius:0px;
+	margin-bottom:-50px;
+	@media @normal{
+	position:absolute;
+
+	}
+
+
+.navbar-header{
+
+position:static;
+	}
+
+	@media (max-width:991px){
+
+		background-color:#FFF;
+		border-bottom:2px @blue solid;
+	}
+
+	@media @tablet{
+		background-image:url('../images/upper-wave.png');
+		background-repeat:no-repeat;
+		background-size:40% 100%;
+		background-position:left;
+		-ms-behavior: url(http://bigmac.aesseal.net/sealco/sites/all/themes/aes_basic/js/backgroundsize.min.htc);
+	}
+}
+
+.navbar-collapse{
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-image:url('../images/upper-wave.png');
+	
+	@media @normal{
+		padding-right:100px !important;
+	}
+
+
+ 	@media @tablet {
+		padding-right:10px;
+	}
+}
+
+.navbar-toggle{
+	background-color:#FFF;
+}
+
+
+.wave-box{
+
+	background-image:url('../images/lower-wave.png');
+	height:100%;
+	width:20%;
+	float:right;
+	background-position: right 50px;
+}
+
+
+.header-wave{
+	color:#FFF;
+	background-image:url('../images/lower-wave.png');
+	background-position: right;
+	background-repeat:no-repeat;
+	background-size:contain;
+	color:#FFFFFF;
+
+	z-index:10;
+
+
+	h2, h3, h4{
+		color:#FFF;
+		
+	}
+
+	/* @media (max-width:991px){
+		background-image:url('../images/lower-wave-sm.png');
+		padding-top:0px;
+		
+	} */
+
+	@media (max-width:480px){
+		background-image:none;
+
+	}
+}
+
+
+
+
+.carousel{
+
+	z-index:-1;
+}
+
+
+
+
+#page-header{
+	position:relative;
+	margin-bottom:50px;
+
+	
+
+	@media (max-width:991px){
+		margin-top:50px;
+	}
+
+	@media (max-width:480px){
+		margin-top:0px;
+	}
+}
+
+   //CAROUSEL
+
+
+.carousel.fade
+{
+    opacity: 1;
+
+
+
+    .item
+    {
+    	
+    	background-size: cover;
+    	-ms-behavior: url(http://bigmac.aesseal.net/sealco/sites/all/themes/aes_basic/js/backgroundsize.min.htc);
+        -moz-transition: opacity ease-in-out .7s;
+        -o-transition: opacity ease-in-out .7s;
+        -webkit-transition: opacity ease-in-out .7s;
+        transition: opacity ease-in-out .7s;
+        left: 0 !important;
+        min-height:250px;
+        opacity: 0;
+        top:0;
+        background-repeat:no-repeat;
+        position:relative;
+        width: 100%;
+        display:block !important;
+        z-index:1;
+        &:first-child{
+            top:auto;
+            position:relative;
+        }
+
+        &.active
+        {
+            opacity: 1;
+            -moz-transition: opacity ease-in-out .7s;
+            -o-transition: opacity ease-in-out .7s;
+            -webkit-transition: opacity ease-in-out .7s;
+            transition: opacity ease-in-out .7s;
+            z-index:2;
+        }
+    }
+
+
+    .carousel-caption{
+
+      padding-top:50px;
+      position:absolute;
+      top:50px;
+      left:auto;
+      right:auto;
+      text-align:left;
+    }
+}
